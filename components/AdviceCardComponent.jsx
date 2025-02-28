@@ -1,6 +1,7 @@
 import { Card } from "flowbite-react"
 import { GetAdvice } from "../src/service/service"
 import { useState, useEffect } from "react"
+import diceIcon from "../src/assets/icon-dice.svg";
 
 const AdviceCardComponent = () => {
     const [advice, setAdvice] = useState([]);
@@ -38,7 +39,7 @@ const AdviceCardComponent = () => {
                 <button className="bg-color-number rounded-full p-4 hover:shadow-lg hover:cursor-pointer -top-5" onClick={() => {
                     fetchAdvice();
                 }}>
-                    <img className="" src="./src/assets/icon-dice.svg" alt="dice icon" />
+                    <img className="" src={diceIcon} alt="dice icon" />
                 </button>
             </div>
             
