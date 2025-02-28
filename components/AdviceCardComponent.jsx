@@ -14,13 +14,13 @@ const AdviceCardComponent = () => {
     }
     fetchAdvice();
 
-    // useEffect(() => {
-    //     fetchAdvice();
-    // }, [])
+    useEffect(() => {
+        fetchAdvice();
+    }, [advice])
 
     return(
         <div className="m-4">
-            <Card className="min-w-96 min-h-56 max-w-sm mx-4 card-bg-color p-2">
+            <Card className="min-w-96 max-w-sm mx-4 card-bg-color p-2 pb-4">
                 <h5 className=" tracking-tight text-color-number text-center">
                     ADVICE #{idNumber}
                 </h5>
@@ -28,14 +28,20 @@ const AdviceCardComponent = () => {
                     "{advice}"
                 </p>
 
-                <img className="my-2 sm:invisible" src="./src/assets/pattern-divider-mobile.svg" alt="pattern divider" />
-                <img className="invisible sm:visible" src="./src/assets/pattern-divider-desktop.svg" alt="pattern divider" />
+                <img className="my-2 sm:hiddden" src="./src/assets/pattern-divider-mobile.svg" alt="pattern divider" />
+                <img className="hidden sm:block" src="./src/assets/pattern-divider-desktop.svg" alt="pattern divider" />
 
-                <button className="flex justify-center ">
-                    <img className="p-4 bg-color-number rounded-full" src="./src/assets/icon-dice.svg" alt="dice icon" />
-                </button>
+                
 
             </Card>
+            <div className="flex justify-center relative ">
+                <button className="bg-color-number rounded-full p-4 hover:shadow-lg hover:cursor-pointer -top-5" onClick={() => {
+                    fetchAdvice();
+                }}>
+                    <img className="" src="./src/assets/icon-dice.svg" alt="dice icon" />
+                </button>
+            </div>
+            
         </div>
     )
 }
