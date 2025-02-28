@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face{
+    font-family: "Manrope";
+    src: url(./assets/fonts/Manrope-VariableFont_wght.ttf);
+}
+
+.font-m{
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+}
+
+.bg-color{
+    background-color: hsl(218, 23%, 16%);
+}
+
+.card-bg-color{
+    background-color: hsl(217, 19%, 24%);
+    border-color: hsl(217, 19%, 24%);
+}
+
+.text-color-advice{
+    color: hsl(193, 38%, 86%);
+}
+
+.text-color-number{
+    color: hsl(150, 100%, 66%);
+}
