@@ -27,3 +27,6 @@
 .text-color-number{
     color: hsl(150, 100%, 66%);
 }
+.bg-color-number{
+    background-color: hsl(150, 100%, 66%);
+}
