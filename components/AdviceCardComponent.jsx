@@ -2,6 +2,8 @@ import { Card } from "flowbite-react"
 import { GetAdvice } from "../src/service/service"
 import { useState, useEffect } from "react"
 import diceIcon from "../src/assets/icon-dice.svg";
+import mobileDivider from "../src/assets/pattern-divider-mobile.svg";
+import desktopDivider from "../src/assets/pattern-divider-desktop.svg";
 
 const AdviceCardComponent = () => {
     const [advice, setAdvice] = useState([]);
@@ -29,8 +31,8 @@ const AdviceCardComponent = () => {
                     "{advice}"
                 </p>
 
-                <img className="my-2 sm:hiddden" src="./src/assets/pattern-divider-mobile.svg" alt="pattern divider" />
-                <img className="hidden sm:block" src="./src/assets/pattern-divider-desktop.svg" alt="pattern divider" />
+                <img className="my-2 sm:hiddden" src={mobileDivider} alt="pattern divider" />
+                <img className="hidden sm:block sm:my-2" src={desktopDivider} alt="pattern divider" />
 
                 
 
