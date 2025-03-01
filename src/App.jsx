@@ -1,5 +1,5 @@
 import './App.css'
-import AdviceCardComponent from '../components/AdviceCardComponent'
+import AdviceCardComponent from './components/AdviceCardComponent'
 
 function App() {
 
